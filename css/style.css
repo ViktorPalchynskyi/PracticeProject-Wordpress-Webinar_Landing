@@ -5,6 +5,7 @@
 }
 
 .container {
+   position: relative;
    width: 1140px;
    margin: 0px auto;
 }
@@ -116,7 +117,7 @@ h2.title {
 }
 
 .waiting {
-   height: 604px;
+   min-height: 604px;
    background-color: #efefef;
    padding: 85px 0px 75px 0px;
 }
@@ -169,4 +170,40 @@ h2.title {
    font-size: 15px;
    font-weight: 300;
    line-height: 21px;
+}
+
+.optimization {
+   padding: 102px 0px 107px 0px;
+   min-height: 550px;
+}
+
+.optimization .optimization_header {
+   margin: 0px 0px 0px 391px;
+   color: #299cbd;
+   font-family: "Roboto - Black";
+   font-size: 30px;
+   font-weight: 400;
+
+   text-transform: uppercase;
+}
+
+.optimization .optimization_text {
+   margin: 25px 0px 0px 391px;
+   color: #4a4a4a;
+   font-family: "Roboto - Light";
+   font-size: 17px;
+   font-weight: 300;
+   line-height: 27px;
+}
+
+.optimization .optimization_text span {
+   font-family: "Roboto - Bold";
+   font-weight: 700;
+}
+
+.optimization .optimization_img {
+   position: absolute;
+   top: -52px;
+   z-index: -1;
+   left: -240px;
 }
