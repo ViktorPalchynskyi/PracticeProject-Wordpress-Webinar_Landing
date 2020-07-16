@@ -271,3 +271,38 @@ h2.title {
 .gift_btn {
    margin: 52px 0px 0px 87px;
 }
+
+.webinar {
+   min-height: 515px;
+   padding: 89px 0px 64px 0px;
+   text-align: center;
+}
+
+.webinar .webinar_title {
+   margin: 37px 0px 0px 0px;
+   color: #252525;
+   font-family: Roboto;
+   font-size: 30px;
+   font-weight: 400;
+   text-transform: uppercase;
+}
+
+.webinar .webinar_date {
+   margin: 30px 0px 0px 0px;
+   color: #299cbd;
+   font-family: "Roboto - Black";
+   font-size: 36px;
+   font-weight: 400;
+   text-transform: uppercase;
+}
+
+
+
+.webinar .webinar_desc{
+   margin: 25px 0px 0px 0px;
+   color: #4a4a4a;
+   font-family: Roboto;
+   font-size: 23px;
+   font-weight: 400;
+   line-height: 20px;
+}
