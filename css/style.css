@@ -296,13 +296,42 @@ h2.title {
    text-transform: uppercase;
 }
 
-
-
-.webinar .webinar_desc{
+.webinar .webinar_desc {
    margin: 25px 0px 0px 0px;
    color: #4a4a4a;
    font-family: Roboto;
    font-size: 23px;
    font-weight: 400;
    line-height: 20px;
+}
+
+.footer {
+   text-align: center;
+   padding: 61px 0px 69px 0px;
+   min-height: 166px;
+   background-color: #1a1a1a;
+}
+.footer_divider {
+   background-color: #888888;
+   height: 13px;
+   width: 1px;
+   margin: 4px 7px 0px 4px;
+}
+.footer_wrapper {
+   display: flex;
+   justify-content: center;
+}
+.footer .footer_call,
+.footer .footer_conf,
+.footer .footer_supp {
+   color: #888888;
+   font-family: Roboto;
+   font-size: 15px;
+   font-weight: 300;
+   line-height: 21px;
+   text-decoration: underline;
+}
+
+.footer .footer_call {
+   text-decoration: none;
 }
