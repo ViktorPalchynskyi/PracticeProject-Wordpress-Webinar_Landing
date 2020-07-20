@@ -330,6 +330,39 @@ h2.title {
 .modal {
 }
 
+.modal.open .modal_window,
+.modal.open .modal_overlay {
+   opacity: 1;
+   z-index: 1000;
+}
+.modal.hide .modal-overlay,
+.modal.hide .modal-window {
+   opacity: 1;
+   z-index: 1000;
+}
+
+.modal.open .modal_window {
+   transform: translateY(100px);
+}
+
+.modal.open .modal-overlay {
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal.hide .modal-window {
+   transform: translateY(-200px);
+}
+
+.modal.hide .modal-overlay {
+   background: rgba(0, 0, 0, 0);
+}
+
+.modal .modal_window,
+.modal .modal_overlay {
+   opacity: 0;
+   z-index: -1;
+}
+
 .modal .modal_overlay {
    position: fixed;
    top: 0;
@@ -337,6 +370,7 @@ h2.title {
    right: 0;
    bottom: 0;
    background-color: rgba(0, 0, 0, 0.5);
+   transition: background-color 0.2s ease-in;
 }
 
 .modal .modal_window {
@@ -345,8 +379,9 @@ h2.title {
    height: 300px;
    background-color: #fff;
    border-radius: 5px;
-   transform: translateY(200px);
    margin: 0px auto;
+   transform: translateY(-200px);
+   transition: transform 0.2s ease-in;
 }
 
 .modal .modal_window form input {

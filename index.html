@@ -37,7 +37,7 @@
             успеха? Узнайте на предстоящем двухдневном <span>БЕСПЛАТНОМ</span> интенсиве!
          </div>
 
-         <button class="promo_btn">Записаться на интенсив!</button>
+         <button class="promo_btn" data-registration="reg">Записаться на интенсив!</button>
 
          <div class="more">
             <div class="more_text">узнать больше об интенсиве</div>
@@ -146,7 +146,7 @@
          <img src="/icons/gift.png" alt="gift" class="gift_icon">
          <div class="gift_desc">Для всех участников интенсива предусмотрены бонусы и подарки. Нажимайте на кнопку
             ниже, принимайте участие в вебинарах и забирайте свой приз по окончании обучения!</div>
-         <button class="gift_btn">Записаться на интенсив!</button>
+         <button class="gift_btn" data-registration="reg">Записаться на интенсив!</button>
       </div>
    </section>
 
@@ -173,22 +173,10 @@
 
    </footer>
 
-   <div class="modal">
-      <div class="modal_overlay">
-         <div class="modal_window">
-            <div class="modal_header">
-               <div class="modal_title">Регистрация</div>
-               <div class="modal_close">&times;</div>
-            </div>
-            <form action="#">
-               <p>Имя:</p><input type="text" placeholder="Ваше имя:">
-               <p>e-mail:</p><input type="e-mail" placeholder="Ваш E-mail адресс:">
-               <p>Телефон:</p><input type="tel" placeholder="Ваш номер телефона:" value="+380">
-               <button class="modal_btn">Зарегистрироваться</button>
-            </form>
-         </div>
-      </div>
-   </div>
+
+   <script src="/js/base.js"></script>
+   <script src="/js/plugin/modal.js"></script>
+   <script src="/js/index.js"></script>
 </body>
 
 </html>
