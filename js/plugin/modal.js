@@ -24,7 +24,7 @@ function _createModal() {
 
 $.modal = function () {
 
-   ANIMATION_SPEED = 200
+   const ANIMATION_SPEED = 1000
    const $modal = _createModal()
    let closing = false
 
@@ -41,6 +41,7 @@ $.modal = function () {
          setTimeout(() => {
             $modal.classList.remove('hide')
             closing = false
+            console.log(ANIMATION_SPEED)
          }, ANIMATION_SPEED)
       }
    }
